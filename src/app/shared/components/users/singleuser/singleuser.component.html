@@ -1,0 +1,29 @@
+
+
+<mat-card class="example-card">
+    <mat-card-header>
+        <mat-card-title>
+            <strong>{{userObj.username | titlecase}}</strong>
+        </mat-card-title>
+        <mat-card-subtitle>{{userObj.userRole}}</mat-card-subtitle>
+    </mat-card-header>
+    <img [src]="userObj.userProfile" alt="Photo of a Person">
+    <mat-card-content>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates blanditiis hic quos autem tempore eaque.
+        </p>
+    </mat-card-content>
+    <mat-card-actions class="d-flex justify-content-between">
+        <button mat-button (click)="gotoedit()">
+            <strong>
+                Edit
+            </strong>
+        </button>
+        <button mat-button (click)="onRemove()">
+                <strong>
+                    Delete
+                </strong>
+        </button>
+    </mat-card-actions>
+    
+</mat-card>
